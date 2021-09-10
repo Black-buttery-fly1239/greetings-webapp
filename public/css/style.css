@@ -1,0 +1,170 @@
+body {
+    background-color: antiquewhite;
+}
+
+.beGreeted {
+    background-color: whitesmoke;
+    margin: auto;
+    font-size: 18px;
+    padding: 50px ;
+    padding-bottom: 90px;
+    width: 480px;
+    
+}
+
+.greetedName {
+    background-color: whitesmoke;
+    margin: auto;
+    font-size: 18px;
+    padding: 50px ;
+    padding-bottom: 150px;
+    width: 50%;
+}
+
+.greetMe {
+    text-align: center;
+    border: 3px ridge whitesmoke;
+}
+
+.row h1 {
+    text-align: center;
+    border: 3px ridge whitesmoke;
+}
+
+.column h1 {
+    text-align: center;
+    border: 3px ridge whitesmoke;
+}
+
+ul {
+    list-style-type: circle;
+    
+}
+
+li {
+    text-decoration: none;
+    text-align: center;
+  }
+
+    .names-greeted {
+        background-color: lightgrey;
+        border: none;
+        text-align: center;
+        font-size: 16px;
+        margin: 4px 2px;
+        border-radius: 17px;
+    }
+    
+    .Counter {
+        float: right;
+        font-weight: bold;
+    }
+    
+    .counter {
+        padding-left: 40px;
+        font-size: 30px;
+    }
+
+    .display {
+        font-size: 25px
+    }
+    
+    .greeted {
+        font-weight: bold;
+    }
+
+    @keyframes power {
+          to {
+        width: 0;
+        height: 0;
+        overflow: hidden;
+    }
+}
+        
+    
+    .entry h3 {
+        color: red;
+        animation: power 0s ease-in 3s forwards;
+    }
+    
+    table {
+        margin-left: auto;
+        margin-right: auto;
+        text-decoration: none;
+    }
+    
+    tr {
+        text-decoration: none;
+        position: center;
+        
+    }
+    
+    
+    /************************************************ button style*****************************************/
+    
+     .button-styles {
+        background-color: lightgrey;
+        border: none;
+        padding: 17px;
+        text-align: center;
+        text-decoration: none;
+        font-size: 16px;
+        margin: 4px 2px;
+        border-radius: 17px ;
+     } 
+ .button {
+     margin-bottom: 180px;
+ }
+
+
+/* btn positioning */
+ .resetBtn{
+     float: right;
+     margin-bottom: 60px;
+ }
+
+ .space-btn{
+    position: absolute;
+    margin-top: 50px;
+ }
+
+ p {
+     font-weight: bold;
+ }
+
+
+ .button{
+    position: absolute;
+    /* left: 45%; */
+    margin-top: 30px;
+  
+ }
+
+     .the-button {
+        display:inline-block;
+        padding: 0.5em 3em;
+        border: black;
+     }
+    
+    /*********************************************** Radio button******************************************/
+    
+    @media(min-width: 800px) {
+        
+        .radio {
+            display: flex;
+            
+        }
+
+        .English {
+            margin: 0.5em;
+        }
+        
+        .Afrikaans {
+            margin: 0.5em;
+        }
+        
+        .Isixhosa {
+            margin: 0.5em;
+        }
+    }
+

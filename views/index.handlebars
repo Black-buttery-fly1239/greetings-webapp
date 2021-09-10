@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+
+
+<body>
+    <div class="beGreeted">
+
+        <div class="greetMe">
+            <h1>Greeting App</h1>
+        </div>
+        
+        <div class="Counter">
+            <h2>Counter</h2>
+            <label class="">
+                <span class="counter">{{counter}}</span>
+            </label>
+        </div><br>
+
+        <form action="/greetings" method="POST" class="shololoz">
+
+            {{#if messages.info}}
+            <div class="entry">
+                <h3> {{messages.info}}</h3>
+            </div>
+            {{/if}}
+
+            <label for="">Name</label>
+
+            <input type="" name="theUser" class="theGreet" value="{{greetings.enterName}}" id="text"
+                placeholder="enter your name"
+                onkeypress="return(event.charCode > 64 && event.charCode < 91)||(event.charCode > 96 && event.charCode < 123)"><br>
+            <br>
+            <div class="radio">
+
+                <input class="theLanguage" type="radio" name="theLanguage" id="English" value="English">
+                <label for="english">English</label><br>
+                <br>
+
+                <input class="theLanguage" type="radio" name="theLanguage" id="Afrikaans" value="Afrikaans">
+                <label for="afrikaans">Afrikaans</label><br>
+                <br>
+
+                <input class="theLanguage" type="radio" name="theLanguage" id="Isixhosa" value="Isixhosa">
+                <label for="isixhosa">Isixhosa</label><br>
+                <br>
+
+            </div>
+
+            <button class="Addbutton button-styles" type="submit" name="button">Greet Me</button>
+
+            <a href="/greeted" class="button-styles">Greeted names</a>
+
+            <br>
+
+        </form><br>
+        <br>
+
+        <div>
+            <label class="display">
+                <span class="greeted">{{name}}</span>
+            </label><br>
+        </div>
+
+        <form action="/reset" method="POST">
+
+            <button class="resetBtn button-styles" type="submit"
+                name="button">Reset</button>
+
+        </form><br>
+        <br>
+
+    </div>
+
+</body>
+
+</html>
